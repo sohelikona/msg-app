@@ -604,7 +604,7 @@ const Contacts = ({contacts, currentUser, changeChat, isVisible}) => {
 
 const Container = styled.div`
   display: grid;
-  grid-template-rows: 10% 80% 13%;
+  grid-template-rows: 10% 80% 10%;
   overflow: hidden;
   
   background-color: #22272e;
