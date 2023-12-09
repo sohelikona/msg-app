@@ -3,21 +3,15 @@
 services:
   - name: client
     type: web
-    buildCommand: npm install && npm run build
-    startCommand: npm run start
-    workingDirectory: /opt/render/project/client
-    env:
-      - key: NODE_ENV
-        value: production
+    buildCommand: npm install && npm run build --prefix client
+    startCommand: npm run start --prefix client
+    workingDirectory: /opt/render/project
 
   - name: server
     type: web
-    buildCommand: npm install && npm run build
-    startCommand: npm run start
-    workingDirectory: /opt/render/project/server
-    env:
-      - key: NODE_ENV
-        value: production
+    buildCommand: npm install && npm run build --prefix server
+    startCommand: npm run start --prefix server
+    workingDirectory: /opt/render/project
 
 database:
   - name: mongodb
