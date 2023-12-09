@@ -583,7 +583,7 @@ const Chat = () => {
 };
 
 const Container = styled.div`
-  height: 100vh;
+  // height: 100vh;
   width: 100vw;
   display: flex;
   flex-direction: column;
@@ -606,8 +606,8 @@ const Container = styled.div`
   cursor: pointer;
 }
   .container {
-    height: 99vh;
-    width: 99vw;
+    height: 100vh;
+    width: 100vw;
     background-color: #22272e;
     box-shadow: 5px 5px 7px 4px rgba(0, 0, 0, 0.5);
     display: grid;
