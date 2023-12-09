@@ -26,8 +26,10 @@ app.use("/api/messages", messageRoutes)
 
 
 const corsOptions = {
-  origin: "https://kona-a8bn.onrender.com", // or your client's origin
-  credentials: true,
+    origin: 'https://kona-a8bn.onrender.com',
+    methods: 'POST',
+    allowedHeaders: 'Content-Type',
+    optionsSuccessStatus: 204,
 };
 
 app.use(cors(corsOptions));
