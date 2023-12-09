@@ -3,16 +3,16 @@
 services:
   - name: client
     type: web
-    buildCommand: npm run build:client
-    startCommand: npm run start:client
+    buildCommand: npm install && cd client && npm run build
+    startCommand: cd client && npm run start
     env:
       - key: NODE_ENV
         value: production
 
   - name: server
     type: web
-    buildCommand: npm run build:server
-    startCommand: npm run start:server
+    buildCommand: npm install && cd server && npm run build
+    startCommand: cd server && npm run start
     env:
       - key: NODE_ENV
         value: production
