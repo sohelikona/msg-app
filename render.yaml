@@ -3,22 +3,18 @@
 services:
   - name: client
     type: web
-    buildCommand: |
-      cd client
-      npm install
-      npm run build
+    buildCommand: npm install && npm run build
     startCommand: npm run start
+    workingDirectory: /opt/render/project/client
     env:
       - key: NODE_ENV
         value: production
 
   - name: server
     type: web
-    buildCommand: |
-      cd server
-      npm install
-      npm run build
+    buildCommand: npm install && npm run build
     startCommand: npm run start
+    workingDirectory: /opt/render/project/server
     env:
       - key: NODE_ENV
         value: production
