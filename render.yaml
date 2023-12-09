@@ -1,0 +1,27 @@
+# render.yaml
+
+services:
+  - name: client
+    type: web
+    buildCommand: npm run build:client
+    startCommand: npm run start:client
+    env:
+      - key: NODE_ENV
+        value: production
+
+  - name: server
+    type: web
+    buildCommand: npm run build:server
+    startCommand: npm run start:server
+    env:
+      - key: NODE_ENV
+        value: production
+
+database:
+  - name: mongodb
+    type: mongodb
+    env:
+      - key: MONGODB_URI
+        fromDatabase:
+          name: your-database-name
+          property: connectionString
