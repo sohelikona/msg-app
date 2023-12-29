@@ -318,5 +318,3 @@ io.on("connection", (socket) => {
 
 
 
-// sohelikona
-// m9Sr7gDuajoWDA5p
