@@ -528,7 +528,7 @@ const Contacts = ({contacts, currentUser, changeChat, isVisible}) => {
     {isVisible && (
          <Container >
          <div className="brand">
-           <div className='text-wrapper'>Kona</div>
+           <div className='text-wrapper'>Blink</div>
          </div>
         
 {/* <div className="contacts">
