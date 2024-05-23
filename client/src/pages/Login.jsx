@@ -68,7 +68,7 @@ export default function Login() {
         <form action="" onSubmit={(event) => handleSubmit(event)}>
           <div className="brand">
             
-            <div className='text-wrapper'><i>KONA</i></div>
+            <div className='text-wrapper'><i>Blink</i></div>
           </div>
           <input
             type="text"
