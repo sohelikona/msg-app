@@ -89,7 +89,7 @@ const Register = () => {
         <form onSubmit={(event) => handleSubmit(event)} encType='multipart/form-data'>
           <div className="brand">
             
-            <div className='text-wrapper'>KONA</div>
+            <div className='text-wrapper'>Blink</div>
           </div>
           <input 
             type='text' 
